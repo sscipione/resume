@@ -10,7 +10,7 @@ body {
 
 main { 
 	display: grid;
-	grid-template-columns: 40% 60%;
+	grid-template-columns: 32% 68%;
 	margin-top: 1em;
 }
 
@@ -24,7 +24,7 @@ section {
 }
 
 ul {
-	margin-bottom: -.5em;
+	margin-bottom: -0.5em;
 	margin-top: 0;
 	padding-left: 20px;
 }
@@ -56,7 +56,7 @@ h1 {
 	padding-bottom: 1em;
 	margin-bottom: 0;
 	margin-top: 0;
-	text-shadow: 1px 1px 0 #007acc, 2px 2px 0 #007acc;
+	text-shadow: 1px 1px 0 Green, 2px 2px 0 green;
 }
 
 h2 {
@@ -80,14 +80,20 @@ h3 {
 }
 
 .skill {
-    display: inline-block;
+    display: flex;
+	align-items: center;
     margin-right: 0.1em;
     margin-bottom: 0.5em;
     padding: 0.5em 0.1em;
     border: 1px solid #ccc;
     border-radius: 5px;
+	color: green;
 }
 .skill i {
 	font-size: 24px;
 	margin-right: 10px;
+}
+
+a[href^="mailto:"] {
+    color: green;
 }
