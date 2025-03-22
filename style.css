@@ -2,10 +2,25 @@ body {
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-size: 12px;
     max-width: 960px;
-    margin: auto;
+    /* margin: auto; */
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #f5f5f5;
+}
+
+/* Reset default margins and paddings */
+body,
+header,
+main {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply consistent padding to header and main */
+header,
+main {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 main {
@@ -32,7 +47,7 @@ header b {
 }
 
 section {
-    margin: auto 1em 2em 2em;
+    margin: 5px 5px 5px 5px;
     border: 1px solid #ccc;
     border-radius: 15px;
     padding: 1em;
@@ -67,7 +82,7 @@ h3 {
 }
 
 h1 {
-    font-size: 32px;;
+    font-size: 32px;
     background-color: lightgray;
     letter-spacing: 0.9em;
     padding-top: 1em;
@@ -79,7 +94,7 @@ h1 {
 
 h2 {
     font-size: 24px;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 10px;
     text-decoration: underline;
     border-bottom: 2px solid #333;
@@ -88,7 +103,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    margin-top: 18px;
+    margin-top: 8px;
     margin-bottom: 5px;
 }
 
@@ -117,8 +132,7 @@ h3 {
 
 article {
     background: #fff;
-    margin: 10px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 1;
     min-width: 200px;
