@@ -257,3 +257,72 @@ a:hover {
     padding: 5px; /* Reduced padding for printing */
   }
 }
+
+@media (max-width: 768px) {
+  .grid1to3 {
+    grid-template-columns: 1fr;
+  }
+
+  .header-major {
+    font-size: 2em;
+  }
+
+  .header-minor {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 24px;
+    letter-spacing: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .column {
+    min-width: 50%;
+    margin: 10px 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    margin: 0;
+    padding: 10px;
+    width: 80%;
+  }
+
+  .formatted {
+    max-width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .header {
+    width: 87%;
+  }
+
+  .margin-lr {
+    margin: 0;
+  }
+
+  .padding-lr {
+    padding: 0;
+  }
+
+  .column {
+    margin: 5px;
+    min-width: 80%;
+    max-width: 89%;
+  }
+}
