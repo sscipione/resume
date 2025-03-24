@@ -46,6 +46,11 @@
   justify-content: center;
 }
 
+.header-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .header {
   text-align: center;
   background-color: #f0f0f0;
@@ -295,6 +300,7 @@ a:hover {
 
   .column {
     min-width: 50%;
+    max-width: 100%;
     margin: 10px 0;
   }
 
@@ -306,7 +312,7 @@ a:hover {
   main {
     margin: 0;
     padding: 10px;
-    width: 80%;
+    width: 100%;
   }
 
   .formatted {
@@ -316,7 +322,8 @@ a:hover {
   }
 
   .header {
-    width: 87%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .margin-lr {
@@ -330,6 +337,6 @@ a:hover {
   .column {
     margin: 5px;
     min-width: 80%;
-    max-width: 89%;
+    max-width: 100%;
   }
 }
