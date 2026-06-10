@@ -1,8 +1,8 @@
 .formatted {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   font-size: 12px;
   max-width: 960px;
-  color: black;
+  color: #1a1a1a;
   background-color: white;
 }
 
@@ -53,10 +53,16 @@
 
 .header {
   text-align: center;
-  background-color: #f0f0f0;
-  color: #333;
+  background: #ffffff;
+  color: #1a1a1a;
   width: 100%;
   border-radius: 15px;
+  border: 3px solid teal;
+}
+
+.header hr {
+  background-color: teal;
+  height: 2px;
 }
 
 .header-major {
@@ -66,6 +72,7 @@
 
 .header-minor {
   font-size: 1.2em;
+  color: #333;
 }
 
 section {
@@ -99,27 +106,32 @@ hr {
 h1,
 h2,
 h3 {
-  font-weight: bold;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
   color: #000000;
 }
 
 h1 {
   font-size: 32px;
-  background-color: lightgray;
-  letter-spacing: 0.9em;
+  background-color: transparent;
+  color: #005f5f;
+  letter-spacing: 0.6em;
   padding-top: 1em;
   padding-bottom: 1em;
   margin-bottom: 0;
   margin-top: 0;
-  text-shadow: 2.5px 2.5px 0 white, 2.5px 2.5px 0 white;
+  text-shadow: none;
 }
 
 h2 {
   font-size: 24px;
   margin-top: 0px;
   margin-bottom: 10px;
-  text-decoration: underline;
-  border-bottom: 2px solid #333;
+  text-decoration: none;
+  border-bottom: 2px solid teal;
+  color: #005f5f;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   padding-bottom: 5px;
 }
 
@@ -139,22 +151,21 @@ h3 {
   display: flex;
   align-items: center;
   margin-bottom: 0.5em;
-  padding: 0.5em 0.1em;
-  border: 1px solid #ccc;
   border-radius: 15px;
-  color: teal;
-  background: #ecebeb;
+  background: linear-gradient(90deg, #007575, #009999);
+  color: #fff;
+  border: none;
   padding: 10px;
 }
 
 .skill i {
   font-size: 24px;
   margin-right: 10px;
+  color: #fff;
 }
 
 .column {
   background: #fff;
-  /* padding: 10px; */
   box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
   flex: 1;
   border: 1px solid rgba(50, 50, 50, 1);
@@ -163,112 +174,132 @@ h3 {
 }
 
 a {
-  color: #333;
+  color: teal;
   text-decoration: none;
 }
 
 a:hover {
+  color: #005050;
   text-decoration: underline;
   font-weight: bold;
 }
 
 .popout:hover {
-  transform: scale(1.01);
-  transition: transform 0.05s ease-in-out;
-  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+  transform: scale(1.02);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 4px 4px 14px rgba(0, 117, 117, 0.35);
 }
+
+.experience-card {
+  border-left: 4px solid teal;
+  padding-left: 1em;
+  position: relative;
+}
+
 
 @media print {
   .formatted {
-    font-size: 10px; /* Reduced font size for printing */
+    font-size: 10px;
   }
 
   .margin-full {
-    margin: 10px; /* Reduced margin for printing */
+    margin: 10px;
   }
 
   .margin-lr {
-    margin: 0 10px; /* Reduced margin for printing */
+    margin: 0 10px;
   }
 
   .margin-tb {
-    margin: 5px 0; /* Reduced margin for printing */
+    margin: 5px 0;
   }
 
   .padding-full {
-    padding: 10px; /* Reduced padding for printing */
+    padding: 10px;
   }
 
   .padding-lr {
-    padding: 0 10px 0 10px; /* Reduced padding for printing */
+    padding: 0 10px 0 10px;
   }
 
   .padding-tb {
-    padding: 10px 0 10px 0; /* Reduced padding for printing */
+    padding: 10px 0 10px 0;
   }
 
   .header {
-    margin: 40px 10px 10px 10px; /* Reduced margin for printing */
-    width: 95%; /* Adjusted width for printing */
+    margin: 40px 10px 10px 10px;
+    width: 95%;
+    background: #005050;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
+
   .grid1to3 {
-    gap: 15px; /* Reduced gap for printing */
-    width: 95%; /* Adjusted width for printing */
+    gap: 15px;
+    width: 95%;
   }
 
   .header-major {
-    font-size: 2em; /* Reduced font size for printing */
+    font-size: 2em;
   }
 
   .header-minor {
-    font-size: 1em; /* Reduced font size for printing */
+    font-size: 1em;
   }
 
   section {
-    padding: 0.5em; /* Reduced padding for printing */
+    padding: 0.5em;
   }
 
   ul {
-    padding-left: 15px; /* Reduced padding for printing */
+    padding-left: 15px;
   }
 
   p {
-    margin-bottom: 5px; /* Reduced margin for printing */
+    margin-bottom: 5px;
   }
 
   h1 {
-    font-size: 24px; /* Reduced font size for printing */
-    letter-spacing: 0.5em; /* Reduced letter-spacing for printing */
-    padding-top: 0.5em; /* Reduced padding for printing */
-    padding-bottom: 0.5em; /* Reduced padding for printing */
-    text-shadow: 1.5px 1.5px 0 white, 1.5px 1.5px 0 white; /* Reduced text-shadow for printing */
+    font-size: 24px;
+    letter-spacing: 0.4em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
 
   h2 {
-    font-size: 18px; /* Reduced font size for printing */
-    margin-bottom: 5px; /* Reduced margin for printing */
-    border-bottom: 1px solid #333; /* Reduced border for printing */
-    padding-bottom: 2px; /* Reduced padding for printing */
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
   }
 
   h3 {
-    font-size: 16px; /* Reduced font size for printing */
-    margin-bottom: 3px; /* Reduced margin for printing */
+    font-size: 16px;
+    margin-bottom: 3px;
   }
 
   .skill {
-    margin-bottom: 0.3em; /* Reduced margin for printing */
-    padding: 0.3em 0.1em; /* Reduced padding for printing */
+    margin-bottom: 0.3em;
+    padding: 0.3em 0.5em;
+    background: #007575;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .skill i {
-    font-size: 20px; /* Reduced font size for printing */
-    margin-right: 5px; /* Reduced margin for printing */
+    font-size: 20px;
+    margin-right: 5px;
   }
 
   .column {
-    padding: 5px; /* Reduced padding for printing */
+    padding: 5px;
   }
+
+  .experience-card {
+    border-left: 4px solid teal;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -286,7 +317,7 @@ a:hover {
 
   h1 {
     font-size: 24px;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.4em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
   }
