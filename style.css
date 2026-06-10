@@ -208,6 +208,7 @@ a:hover {
   }
 
   .header {
+    margin: 40px 10px 10px 10px; /* Reduced margin for printing */
     width: 95%; /* Adjusted width for printing */
   }
   .grid1to3 {
